@@ -13,7 +13,7 @@ def call(String repoUrl) {
         steps{
             //echo "${params.branch} for one"
             //echo "${params.choice} among two"
-            git branch: 'main', url: ${repoUrl}
+            git branch: "main", url: "${repoUrl}"
         }
     }
     stage('Code Test'){
